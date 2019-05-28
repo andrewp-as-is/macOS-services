@@ -32,6 +32,7 @@
 # Writes panic reports
 /System/Library/LaunchDaemons/com.apple.DumpPanic.plist
 
+# coordinate file access safely between different processes or different threads
 /System/Library/LaunchDaemons/com.apple.FileCoordination.plist
 /System/Library/LaunchDaemons/com.apple.FontWorker.plist
 
@@ -139,6 +140,8 @@
 # macOS audio daemon
 /System/Library/LaunchDaemons/com.apple.audio.coreaudiod.plist
 /System/Library/LaunchDaemons/com.apple.audio.systemsoundserverd.plist
+
+# audit log management daemon
 /System/Library/LaunchDaemons/com.apple.auditd.plist
 
 # autofsd -- daemon to update autofs mounts on network changes
@@ -215,8 +218,10 @@
 # corebrightnessd -- corebrightnessd daemon
 /System/Library/LaunchDaemons/com.apple.corebrightnessd.plist
 
-# corecaptured -- corecaptured daemon
+# corecaptured -- Captures WiFi logs when a failure is reported
 /System/Library/LaunchDaemons/com.apple.corecaptured.plist
+
+# coreduetd - Handoff between iOS and macOS.
 /System/Library/LaunchDaemons/com.apple.coreduetd.osx.plist
 
 /System/Library/LaunchDaemons/com.apple.coreservices.appleevents.plist
@@ -396,6 +401,8 @@
 /System/Library/LaunchDaemons/com.apple.mbusertrampoline.plist
 /System/Library/LaunchDaemons/com.apple.mdmclient.daemon.plist
 /System/Library/LaunchDaemons/com.apple.mdmclient.daemon.runatboot.plist
+
+# mediaremoted - Allows the music buttons to be used to control 3rd Party apps
 /System/Library/LaunchDaemons/com.apple.mediaremoted.plist
 
 /System/Library/LaunchDaemons/com.apple.metadata.mds.index.plist
@@ -403,6 +410,7 @@
 /System/Library/LaunchDaemons/com.apple.metadata.mds.scan.plist
 /System/Library/LaunchDaemons/com.apple.metadata.mds.spindump.plist
 
+# ???
 /System/Library/LaunchDaemons/com.apple.mobile.keybagd.plist
 
 # mobileassetd - download assets for other apps
@@ -440,7 +448,7 @@
 /System/Library/LaunchDaemons/com.apple.nis.ypbind.plist
 /System/Library/LaunchDaemons/com.apple.noticeboard.state.plist
 
-# notifyd - Cyrus notification server
+# notifyd - Mac OS X notification system
 /System/Library/LaunchDaemons/com.apple.notifyd.plist
 
 # icloud sync
@@ -472,17 +480,23 @@
 /System/Library/LaunchDaemons/com.apple.postfix.master.plist
 /System/Library/LaunchDaemons/com.apple.postfix.newaliases.plist
 
+# powerd - core part of macOS
 /System/Library/LaunchDaemons/com.apple.powerd.plist
 /System/Library/LaunchDaemons/com.apple.powerd.swd.plist
 /System/Library/LaunchDaemons/com.apple.powerlogd.plist
 
 /System/Library/LaunchDaemons/com.apple.preferences.timezone.admintool.plist
+
+# Printers
 /System/Library/LaunchDaemons/com.apple.printtool.daemon.plist
+
+# racoon - VPN (IPSec keys exchange)
 /System/Library/LaunchDaemons/com.apple.racoon.plist
 
-# rapportd -- Rapport Daemon
+# rapportd -- daemon that enables Phone Call Handoff and other communication features between Apple devices
 /System/Library/LaunchDaemons/com.apple.rapportd.plist
 
+# Remote Access
 /System/Library/LaunchDaemons/com.apple.remotemanagementd.plist
 /System/Library/LaunchDaemons/com.apple.remotepairtool.plist
 
@@ -495,7 +509,7 @@
 # rpcbind -- portmap
 /System/Library/LaunchDaemons/com.apple.rpcbind.plist
 
-# home sharing
+# rtcreportingd - home sharing
 /System/Library/LaunchDaemons/com.apple.rtcreportingd.plist
 
 # sandboxd -- sandbox daemon
@@ -528,6 +542,8 @@
 
 # SMB - filesharing and printing services to Windows clients
 /System/Library/LaunchDaemons/com.apple.smb.preferences.plist
+
+# smbd - filesharing and printing services to Windows clients
 /System/Library/LaunchDaemons/com.apple.smbd.plist
 
 /System/Library/LaunchDaemons/com.apple.softwareupdate_download_service.plist
@@ -549,6 +565,7 @@
 
 # storagekitd -- helper for the StorageKit framework
 /System/Library/LaunchDaemons/com.apple.storagekitd.plist
+
 /System/Library/LaunchDaemons/com.apple.storeaccountd.daemon.plist
 /System/Library/LaunchDaemons/com.apple.storeagent.daemon.plist
 /System/Library/LaunchDaemons/com.apple.storeassetd.daemon.plist

@@ -61,7 +61,7 @@
 # Dwell Control is a new feature for macOS Sierra that enables users to control the cursor on Mac using assistive technologies and hardware like a headband with reflective dots or eye movements
 /System/Library/LaunchAgents/com.apple.DwellControl.plist
 
-# EscrowSecurityAlert is related to iCloud keychain synchronizing
+# EscrowSecurityAlert - works with the iCloud Keychain servers. it manages the password uploads and anything that keychain tools does.
 /System/Library/LaunchAgents/com.apple.EscrowSecurityAlert.plist
 
 /System/Library/LaunchAgents/com.apple.FileProvider.plist
@@ -182,7 +182,11 @@
 # Apple feedback
 /System/Library/LaunchAgents/com.apple.appleseed.seedusaged.plist
 /System/Library/LaunchAgents/com.apple.appleseed.seedusaged.postinstall.plist
+
+# applespell - spell check
 /System/Library/LaunchAgents/com.apple.applespell.plist
+
+
 /System/Library/LaunchAgents/com.apple.appsleepd.plist
 
 /System/Library/LaunchAgents/com.apple.appstoreupdateagent.plist
@@ -414,8 +418,12 @@
 
 /System/Library/LaunchAgents/com.apple.powerchime.plist
 /System/Library/LaunchAgents/com.apple.preference.displays.MirrorDisplays.plist
+
+# Printers
 /System/Library/LaunchAgents/com.apple.printtool.agent.plist
 /System/Library/LaunchAgents/com.apple.printuitool.agent.plist
+
+
 /System/Library/LaunchAgents/com.apple.protectedcloudstorage.protectedcloudkeysyncing.plist
 
 
@@ -445,6 +453,7 @@
 /System/Library/LaunchAgents/com.apple.screensharing.agent.plist
 /System/Library/LaunchAgents/com.apple.screensharing.menuextra.plist
 
+# scrod - This daemon deals with Voice Control
 /System/Library/LaunchAgents/com.apple.scrod.plist
 
 # secd -- centralised keychain agent
@@ -464,7 +473,10 @@
 # sharingd -- Sharing Daemon that enables AirDrop, Shared Computers, and Remote Disc in the Finder
 /System/Library/LaunchAgents/com.apple.sharingd.plist
 
+# siriknowledged - Siri
 /System/Library/LaunchAgents/com.apple.siriknowledged.plist
+
+# soagent
 /System/Library/LaunchAgents/com.apple.soagent.plist
 /System/Library/LaunchAgents/com.apple.softwareupdate_notify_agent.plist
 
