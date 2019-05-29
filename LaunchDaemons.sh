@@ -21,7 +21,11 @@
 /System/Library/LaunchDaemons/com.apple.CoreAuthentication.daemon.plist
 
 /System/Library/LaunchDaemons/com.apple.CoreRAID.plist
+
+# CrashReporter
 /System/Library/LaunchDaemons/com.apple.CrashReporterSupportHelper.plist
+
+
 /System/Library/LaunchDaemons/com.apple.CryptoTokenKit.ahp.plist
 
 # macOS stuff
@@ -61,6 +65,7 @@
 
 /System/Library/LaunchDaemons/com.apple.MRTd.plist
 
+# ManagedClient.app - mobile accounts
 /System/Library/LaunchDaemons/com.apple.ManagedClient.cloudconfigurationd.plist
 /System/Library/LaunchDaemons/com.apple.ManagedClient.enroll.plist
 /System/Library/LaunchDaemons/com.apple.ManagedClient.plist
@@ -68,15 +73,21 @@
 
 /System/Library/LaunchDaemons/com.apple.MobileAccessoryUpdater.plist
 /System/Library/LaunchDaemons/com.apple.MobileFileIntegrity.plist
+
 /System/Library/LaunchDaemons/com.apple.NetBootClientStatus.plist
 /System/Library/LaunchDaemons/com.apple.NetworkLinkConditioner.plist
 /System/Library/LaunchDaemons/com.apple.NetworkSharing.plist
 /System/Library/LaunchDaemons/com.apple.ODSAgent.plist
 /System/Library/LaunchDaemons/com.apple.PCIELaneConfigTool.plist
 /System/Library/LaunchDaemons/com.apple.PasswordService.plist
+
 /System/Library/LaunchDaemons/com.apple.ProcessPanicReport.plist
+
+# ARD
 /System/Library/LaunchDaemons/com.apple.RFBEventHelper.plist
 /System/Library/LaunchDaemons/com.apple.RemoteDesktop.PrivilegeProxy.plist
+
+# ReportCrash
 /System/Library/LaunchDaemons/com.apple.ReportCrash.Root.Self.plist
 /System/Library/LaunchDaemons/com.apple.ReportCrash.Root.plist
 /System/Library/LaunchDaemons/com.apple.ReportPanicService.plist
@@ -153,7 +164,7 @@
 # avbdeviced is a daemon used for discovering, configuring and control- ling Ethernet AVB devices
 /System/Library/LaunchDaemons/com.apple.avbdeviced.plist
 
-# Back to My Mac
+# Back to My Mac (deprecated since macOS Mojave)
 /System/Library/LaunchDaemons/com.apple.awacsd.plist
 
 # wdd is a system daemon that collects diagnostics and usage data
@@ -194,6 +205,7 @@
 /System/Library/LaunchDaemons/com.apple.cfnetwork.cfnetworkagent.plist
 /System/Library/LaunchDaemons/com.apple.cfprefsd.xpc.daemon.plist
 
+# Camera
 /System/Library/LaunchDaemons/com.apple.cmio.AVCAssistant.plist
 /System/Library/LaunchDaemons/com.apple.cmio.AppleCameraAssistant.plist
 /System/Library/LaunchDaemons/com.apple.cmio.IIDCVideoAssistant.plist
@@ -399,6 +411,8 @@
 
 /System/Library/LaunchDaemons/com.apple.mbsystemadministration.plist
 /System/Library/LaunchDaemons/com.apple.mbusertrampoline.plist
+
+# MDM - Mobile Device Management
 /System/Library/LaunchDaemons/com.apple.mdmclient.daemon.plist
 /System/Library/LaunchDaemons/com.apple.mdmclient.daemon.runatboot.plist
 
@@ -496,7 +510,7 @@
 # rapportd -- daemon that enables Phone Call Handoff and other communication features between Apple devices
 /System/Library/LaunchDaemons/com.apple.rapportd.plist
 
-# Remote Access
+# ARD
 /System/Library/LaunchDaemons/com.apple.remotemanagementd.plist
 /System/Library/LaunchDaemons/com.apple.remotepairtool.plist
 

@@ -80,13 +80,14 @@
 /System/Library/LaunchAgents/com.apple.FontValidatorConduit.plist
 /System/Library/LaunchAgents/com.apple.FontWorker.plist
 
+# Facetime Camera
 /System/Library/LaunchAgents/com.apple.IMLoggingAgent.plist
 /System/Library/LaunchAgents/com.apple.LocalAuthentication.UIAgent.plist
 
 # Malware Removal Tool
 /System/Library/LaunchAgents/com.apple.MRTa.plist
 
-# ManagedClient.app - managed preferences
+# ManagedClient.app - mobile accounts
 /System/Library/LaunchAgents/com.apple.ManagedClientAgent.agent.plist
 /System/Library/LaunchAgents/com.apple.ManagedClientAgent.enrollagent.plist
 
@@ -186,11 +187,12 @@
 # applespell - spell check
 /System/Library/LaunchAgents/com.apple.applespell.plist
 
-
 /System/Library/LaunchAgents/com.apple.appsleepd.plist
 
 /System/Library/LaunchAgents/com.apple.appstoreupdateagent.plist
 /System/Library/LaunchAgents/com.apple.askpermissiond.plist
+
+# Siri
 /System/Library/LaunchAgents/com.apple.assistant_service.plist
 
 # macOS dictation
@@ -210,8 +212,9 @@
 /System/Library/LaunchAgents/com.apple.btsa.plist
 /System/Library/LaunchAgents/com.apple.cache_delete.plist
 
-# Cellular Digital Packet Data - mobile data service
+# cdpd - Cellular Digital Packet Data, mobile data service
 /System/Library/LaunchAgents/com.apple.cdpd.plist
+
 /System/Library/LaunchAgents/com.apple.cfnetwork.AuthBrokerAgent.plist
 /System/Library/LaunchAgents/com.apple.cfprefsd.xpc.agent.plist
 
@@ -222,7 +225,7 @@
 /System/Library/LaunchAgents/com.apple.cloudd.plist
 /System/Library/LaunchAgents/com.apple.cloudpaird.plist
 
-# cloudphotosd -- The macOS photo sharing agent
+# cloudphotosd -- background uploading of photos
 /System/Library/LaunchAgents/com.apple.cloudphotosd.plist
 
 /System/Library/LaunchAgents/com.apple.cmfsyncagent.plist
@@ -307,7 +310,7 @@
 # ?????
 /System/Library/LaunchAgents/com.apple.idsremoteurlconnectionagent.plist
 
-# imagent -- part of iMessage/Messages/Facetime
+# imagent --  iMessage/Messages/Facetime
 /System/Library/LaunchAgents/com.apple.imagent.plist
 /System/Library/LaunchAgents/com.apple.imautomatichistorydeletionagent.plist
 
@@ -426,15 +429,16 @@
 
 /System/Library/LaunchAgents/com.apple.protectedcloudstorage.protectedcloudkeysyncing.plist
 
-
+# QuickLook
 /System/Library/LaunchAgents/com.apple.quicklook.32bit.plist
 /System/Library/LaunchAgents/com.apple.quicklook.ThumbnailsAgent.plist
 /System/Library/LaunchAgents/com.apple.quicklook.plist
 /System/Library/LaunchAgents/com.apple.quicklook.ui.helper.plist
 
+# rapportd -- Phone Call Handoff
 /System/Library/LaunchAgents/com.apple.rapportd-user.plist
 
-# rcd -- Remote control daemon
+# rcd -- Remote control daemon (ARD)
 /System/Library/LaunchAgents/com.apple.rcd.plist
 
 /System/Library/LaunchAgents/com.apple.recentsd.plist
@@ -512,6 +516,7 @@
 # SyncServer handles synchronization jobs on Mac OS X that use the built-in sync engine. This applies to iDisk (for .Mac), iSync, iTunes (syncing with iPods and iPhones)
 /System/Library/LaunchAgents/com.apple.syncservices.SyncServer.plist
 /System/Library/LaunchAgents/com.apple.syncservices.uihandler.plist
+
 /System/Library/LaunchAgents/com.apple.sysdiagnose_agent.plist
 /System/Library/LaunchAgents/com.apple.systemprofiler.plist
 
